@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Covid-19 Tracker</string>
+    <string name="splash_txtView">Covid-19 Tracker</string>
+    <string name="creater_name">Yasharth</string>
+    <string name="updated_time">0</string>
+    <string name="front_txt">India</string>
+</resources>
