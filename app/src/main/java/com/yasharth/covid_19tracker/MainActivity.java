@@ -2,6 +2,7 @@ package com.yasharth.covid_19tracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -44,13 +45,25 @@ public class MainActivity extends AppCompatActivity {
         updateTime = findViewById(R.id.tv_time);
         btn = findViewById(R.id.otherRegionBtn);
 
+        //Marquee Text
+        TextView marqueeTxt = findViewById(R.id.tvMarquee);
+        marqueeTxt.setSelected(true);
+        marqueeTxt.setSingleLine(true);
+        //Marquee End
+
         getData();
 
-
-        Animation animation = AnimationUtils.loadAnimation(
-                getApplicationContext(),
-                R.anim.button
-        );
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.button);
+                btn.setAnimation(animation);
+                btn.startAnimation(animation);
+                Intent intent = new Intent(MainActivity.this,OtherRegion.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void getData()

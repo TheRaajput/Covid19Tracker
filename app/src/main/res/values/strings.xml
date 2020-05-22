@@ -4,4 +4,19 @@
     <string name="creater_name">Yasharth</string>
     <string name="updated_time">0</string>
     <string name="front_txt">India</string>
+    <string name="stay_safe_stay_healthy">Stay Safe,Stay healthy</string>
+    <string name="updated">Updated:</string>
+    <string name="_0">0</string>
+    <string name="deceased">Deceased:</string>
+    <string name="__0">0</string>
+    <string name="active_cases">Active cases:</string>
+    <string name="___0">0</string>
+    <string name="recovered_cases">Recovered cases:</string>
+    <string name="____0">0</string>
+    <string name="total_cases">Total Cases:</string>
+    <string name="india">India</string>
+    <string name="other_regions">Other Regions</string>
+    <string name="other_regions_of_india">Other Regions Of India</string>
+    <string name="recovered">Recovered</string>
+    <string name="deceased_tv">Deceased</string>
 </resources>
