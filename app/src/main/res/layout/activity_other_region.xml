@@ -7,7 +7,9 @@
     android:background="@android:color/black"
     android:orientation="horizontal"
     tools:context=".OtherRegion">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -35,7 +37,7 @@
                 android:fontFamily="sans-serif"
                 android:text="State"
                 android:textColor="#fff"
-                android:textSize="22sp" />
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/Infected"
@@ -45,7 +47,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Infected"
                 android:textColor="#fff"
-                android:textSize="22sp" />
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/recovered"
@@ -55,7 +57,7 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/recovered"
                 android:textColor="#fff"
-                android:textSize="22sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/death"
@@ -65,7 +67,7 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/deceased_tv"
                 android:textColor="#fff"
-                android:textSize="22sp" />
+                android:textSize="20sp" />
 
         </TableRow>
 
@@ -74,12 +76,12 @@
             android:layout_height="3dip"
             android:background="#ff0000" />
     </TableLayout>
+
     <ListView
         android:id="@+id/records_view"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_marginTop="16dp">
-    </ListView>
+        android:layout_marginTop="16dp"></ListView>
 
-
+</LinearLayout>
 </LinearLayout>

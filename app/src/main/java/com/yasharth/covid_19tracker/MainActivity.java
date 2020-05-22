@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
                 btn.startAnimation(animation);
                 Intent intent = new Intent(MainActivity.this,OtherRegion.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
