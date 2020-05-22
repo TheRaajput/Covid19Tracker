@@ -18,38 +18,32 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.DateFormat;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
 
     TextView tvCases, tvRecovered, tvActive,tvTotalDeaths, updateTime;
-    ProgressBar mainProgress;
-    ArrayList<HashMap<String, String>> arraylist;
+    ProgressBar mainProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        mainProgressBar = findViewById(R.id.progressBarmain);
         tvCases = findViewById(R.id.tvCases);
         tvRecovered = findViewById(R.id.tvRecovered);
         tvActive = findViewById(R.id.tvActive);
         tvTotalDeaths = findViewById(R.id.tvTotalDeaths);
         updateTime = findViewById(R.id.tv_time);
-        mainProgress = findViewById(R.id.progressBarmain);
 
         getData();
 
     }
-
-
 
     private void getData()
     {
@@ -64,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response)
                     {
+                        mainProgressBar.setVisibility(View.VISIBLE);
                         try {
 
                             JSONObject jsonObject
@@ -84,8 +79,9 @@ public class MainActivity extends AppCompatActivity {
                                             "deaths"));
 
                             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-                            SimpleDateFormat output = new SimpleDateFormat("dd-MM-yyyy\nHH:mm:ss aa");
+                            SimpleDateFormat output = new SimpleDateFormat("dd/MM/yyyy\nHH:mm:ss aa");
                             Date d = sdf.parse(jsonObject.getString("lastUpdatedAtApify"));
+                            assert d != null;
                             String formattedTime = output.format(d);
 
                             updateTime.setText(formattedTime);
@@ -93,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         catch (JSONException | ParseException e) {
                             e.printStackTrace();
                         }
+                        mainProgressBar.setVisibility(View.INVISIBLE);
                     }
                 },
                 new Response.ErrorListener() {
@@ -107,11 +104,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-        mainProgress.setVisibility(View.VISIBLE);
         RequestQueue requestQueue;
         requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(request);
-        mainProgress.setVisibility(View.INVISIBLE);
+
     }
 
 }

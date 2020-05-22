@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/black">
-
 
     <ProgressBar
         android:id="@+id/progressBarmain"
@@ -37,14 +35,14 @@
         android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textColorHighlight="@android:color/holo_red_dark"
-        android:textSize="36sp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBarmain"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.235" />
 
     <TextView
         android:id="@+id/textView"
@@ -54,14 +52,14 @@
         android:gravity="center"
         android:text="Total Cases:"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.357" />
 
     <TextView
         android:id="@+id/tvCases"
@@ -71,7 +69,7 @@
         android:gravity="center"
         android:text="0"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,16 +89,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Recovered:"
+        android:text="Recovered cases:"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/progressBarmain"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintVertical_bias="0.448" />
 
     <TextView
         android:id="@+id/tvRecovered"
@@ -110,7 +108,7 @@
         android:gravity="center"
         android:text="0"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,16 +128,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Active:"
+        android:text="Active cases:"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+        app:layout_constraintVertical_bias="0.537" />
 
     <TextView
         android:id="@+id/tvActive"
@@ -149,7 +147,7 @@
         android:gravity="center"
         android:text="0"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,16 +166,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Total Deaths:"
+        android:text="Deceased:"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <TextView
         android:id="@+id/tvTotalDeaths"
@@ -187,7 +185,7 @@
         android:gravity="center"
         android:text="0"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -208,14 +206,14 @@
         android:gravity="center"
         android:text="Updated:"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66" />
+        app:layout_constraintVertical_bias="0.709" />
 
     <TextView
         android:id="@+id/tv_time"
@@ -225,7 +223,7 @@
         android:gravity="center"
         android:text="@string/updated_time"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -233,55 +231,52 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.0" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView4"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_gravity="start"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_time"
-        app:layout_constraintVertical_bias="0.0"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="17899-hand-sanitizer.json"
-        app:lottie_loop="true" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView2"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/lottieAnimationView3"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toEndOf="@+id/lottieAnimationView4"
-        app:layout_constraintTop_toBottomOf="@+id/tv_time"
-        app:layout_constraintVertical_bias="0.0"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="17900-namaste-no-shake-hands.json"
-        app:lottie_loop="true" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView3"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/linlayOut"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_time"
-        app:layout_constraintVertical_bias="0.0"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="17895-wear-mask.json"
-        app:lottie_loop="true" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBarmain">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView4"
+            android:layout_width="126dp"
+            android:layout_height="176dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="55dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="17899-hand-sanitizer.json"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView2"
+            android:layout_width="173dp"
+            android:layout_height="194dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="17900-namaste-no-shake-hands.json"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView3"
+            android:layout_width="117dp"
+            android:layout_height="179dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="55dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="17895-wear-mask.json"
+            app:lottie_loop="true" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
