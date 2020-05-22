@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,22 +30,27 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextView tvCases, tvRecovered, tvActive,tvTotalDeaths, updateTime;
-    ProgressBar mainProgressBar;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mainProgressBar = findViewById(R.id.progressBarmain);
         tvCases = findViewById(R.id.tvCases);
         tvRecovered = findViewById(R.id.tvRecovered);
         tvActive = findViewById(R.id.tvActive);
         tvTotalDeaths = findViewById(R.id.tvTotalDeaths);
         updateTime = findViewById(R.id.tv_time);
+        btn = findViewById(R.id.otherRegionBtn);
 
         getData();
 
+
+        Animation animation = AnimationUtils.loadAnimation(
+                getApplicationContext(),
+                R.anim.button
+        );
     }
 
     private void getData()
@@ -58,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response)
                     {
-                        mainProgressBar.setVisibility(View.VISIBLE);
+
                         try {
 
                             JSONObject jsonObject
@@ -89,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                         catch (JSONException | ParseException e) {
                             e.printStackTrace();
                         }
-                        mainProgressBar.setVisibility(View.INVISIBLE);
+
                     }
                 },
                 new Response.ErrorListener() {
