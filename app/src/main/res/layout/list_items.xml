@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/black">
     <TextView
+        android:layout_marginTop="8dp"
         android:id="@+id/record_regionData"
         android:fontFamily="sans-serif"
         android:layout_height="wrap_content"
@@ -11,36 +12,39 @@
         android:layout_weight="1"
         android:textColor="#fff"
         android:gravity="center"
-        android:textSize="20sp"
-        android:text="Region"/>
+        android:textSize="16dp"
+        android:text="@string/region"/>
     <TextView
+        android:layout_marginTop="8dp"
         android:id="@+id/record_Infected"
-        android:textColor="#fff"
+        android:textColor="@android:color/holo_red_dark"
         android:fontFamily="sans-serif"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:textSize="20sp"
-        android:text="Infected"/>
+        android:textSize="16dp"
+        android:text="@string/infected"/>
     <TextView
-        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_green_light"
         android:id="@+id/record_Recovered"
         android:fontFamily="sans-serif"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:textSize="20sp"
+        android:textSize="16dp"
         android:gravity="center"
         android:layout_weight="1"
-        android:text="Recovered"/>
+        android:text="@string/recovered"/>
     <TextView
-        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_red_dark"
         android:id="@+id/record_Deceased"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_weight="1"
-        android:textSize="20sp"
-        android:text="Deceased"/>
+        android:textSize="16dp"
+        android:text="@string/deceased_2"/>
 </LinearLayout>

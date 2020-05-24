@@ -36,7 +36,7 @@ public class OtherRegion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other_region);
 
-        listView = findViewById(R.id.records_view);
+        listView = findViewById(R.id.record_items);
         DetailsList = new ArrayList<>();
 
         loadList();
@@ -44,23 +44,19 @@ public class OtherRegion extends AppCompatActivity {
     }
 
     private void loadList() {
-        final ProgressBar progressBar = (ProgressBar)findViewById(R.id.progressBar);
-
-        progressBar.setVisibility(View.VISIBLE);
 
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        progressBar.setVisibility(View.INVISIBLE);
 
                         try {
                             JSONObject obj = new JSONObject(response);
 
                             JSONArray detailsArray = obj.getJSONArray("regionData");
 
-                            for (int i = 0; i< detailsArray.length(); i++)
+                            for (int i = 0; i< detailsArray.length()-2; i++)
                             {
                                 JSONObject DetailsObject = detailsArray.getJSONObject(i);
 

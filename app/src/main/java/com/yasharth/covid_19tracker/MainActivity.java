@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                                             "deaths"));
 
                             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-                            SimpleDateFormat output = new SimpleDateFormat("dd/MM/yyyy\nHH:mm:ss aa");
+                            SimpleDateFormat output = new SimpleDateFormat("dd/MM/yyyy [HH:mm:ss aa]");
                             Date d = sdf.parse(jsonObject.getString("lastUpdatedAtApify"));
                             assert d != null;
                             String formattedTime = output.format(d);

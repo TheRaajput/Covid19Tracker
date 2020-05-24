@@ -15,8 +15,11 @@
     <string name="____0">0</string>
     <string name="total_cases">Total Cases:</string>
     <string name="india">India</string>
-    <string name="other_regions">Other Regions</string>
+    <string name="other_regions">Tap to see other regions</string>
     <string name="other_regions_of_india">Other Regions Of India</string>
     <string name="recovered">Recovered</string>
     <string name="deceased_tv">Deceased</string>
+    <string name="infected">Infected</string>
+    <string name="region">Region</string>
+    <string name="deceased_2">Deceased</string>
 </resources>
