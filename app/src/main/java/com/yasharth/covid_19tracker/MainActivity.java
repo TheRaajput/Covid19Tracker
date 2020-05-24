@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
     private void getData()
     {
 
+        final ProgressBar mainProgress = findViewById(R.id.mainProgressBar);
+
+        mainProgress.setVisibility(View.VISIBLE);
+
         String url = "https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true";
 
         StringRequest request
@@ -78,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response)
                     {
+
+                        mainProgress.setVisibility(View.INVISIBLE);
 
                         try {
 

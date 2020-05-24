@@ -17,10 +17,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:indeterminate="true" />
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="16dp">
 
                 <TableRow
                     android:layout_width="match_parent"

@@ -45,11 +45,15 @@ public class OtherRegion extends AppCompatActivity {
 
     private void loadList() {
 
+        final ProgressBar progressBar = findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.VISIBLE);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
+                        progressBar.setVisibility(View.INVISIBLE);
 
                         try {
                             JSONObject obj = new JSONObject(response);
