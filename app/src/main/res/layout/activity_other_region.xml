@@ -40,9 +40,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="sans-serif"
-                        android:text="State"
+                        android:fontFamily="@font/alfa_slab_one"
                         android:gravity="center"
+                        android:text="State"
                         android:textColor="#fff"
                         android:textSize="18dp" />
 
@@ -51,10 +51,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="@font/alfa_slab_one"
+                        android:gravity="center"
                         android:text="Infected"
                         android:textColor="#fff"
-                        android:gravity="center"
                         android:textSize="18dp" />
 
                     <TextView
@@ -62,10 +62,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="@font/alfa_slab_one"
+                        android:gravity="center"
                         android:text="Recovered"
                         android:textColor="@android:color/white"
-                        android:gravity="center"
                         android:textSize="18dp" />
 
                     <TextView
@@ -73,10 +73,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="@font/alfa_slab_one"
+                        android:gravity="center"
                         android:text="Deceased"
                         android:textColor="#fff"
-                        android:gravity="center"
                         android:textSize="18dp" />
 
                 </TableRow>

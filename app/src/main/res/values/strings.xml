@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Covid-19 Tracker</string>
     <string name="splash_txtView">Covid-19 Tracker</string>
-    <string name="creater_name">Yasharth</string>
+    <string name="creater_name">By Yasharth</string>
     <string name="updated_time">0</string>
     <string name="front_txt">India</string>
-    <string name="stay_safe_stay_healthy">Stay Safe,Stay healthy</string>
+    <string name="stay_safe_stay_healthy">Stay Safe,Stay Healthy</string>
     <string name="updated">Updated:</string>
     <string name="_0">0</string>
     <string name="deceased">Deceased:</string>
@@ -15,7 +15,7 @@
     <string name="____0">0</string>
     <string name="total_cases">Total Cases:</string>
     <string name="india">India</string>
-    <string name="other_regions">Tap to see other regions</string>
+    <string name="other_regions">Tap here</string>
     <string name="other_regions_of_india">Other Regions Of India</string>
     <string name="recovered">Recovered</string>
     <string name="deceased_tv">Deceased</string>

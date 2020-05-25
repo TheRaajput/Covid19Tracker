@@ -33,7 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="98dp"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="@font/tedayslater"
         android:gravity="center"
         android:text="@string/splash_txtView"
         android:textColor="@android:color/white"

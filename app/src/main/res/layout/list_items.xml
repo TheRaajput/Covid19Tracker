@@ -3,17 +3,18 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
+
     <TextView
-        android:layout_marginTop="8dp"
         android:id="@+id/record_regionData"
-        android:fontFamily="sans-serif"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:textColor="#fff"
+        android:fontFamily="sans-serif"
         android:gravity="center"
-        android:textSize="16dp"
-        android:text="@string/region"/>
+        android:text="@string/region"
+        android:textColor="#fff"
+        android:textSize="14dp" />
     <TextView
         android:layout_marginTop="8dp"
         android:id="@+id/record_Infected"
