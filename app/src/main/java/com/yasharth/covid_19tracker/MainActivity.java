@@ -45,11 +45,6 @@ public class MainActivity extends AppCompatActivity {
         updateTime = findViewById(R.id.tv_time);
         btn = findViewById(R.id.otherRegionBtn);
 
-        //Marquee Text
-        TextView marqueeTxt = findViewById(R.id.tvMarquee);
-        marqueeTxt.setSelected(true);
-        marqueeTxt.setSingleLine(true);
-        //Marquee End
 
         getData();
 
@@ -124,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                     {
                         Toast.makeText(
                                 MainActivity.this,
-                                error.getMessage(),
+                                "Internet Error",
                                 Toast.LENGTH_SHORT)
                                 .show();
                     }
